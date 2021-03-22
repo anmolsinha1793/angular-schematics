@@ -41,8 +41,10 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 6. npm i --no-save schematics-demo-1.0.0-tgz
 
-7. ng g @schematics/hello:hello Tomas
-
-8. ng g @schematics/demo:crud-resource lazy-feature/super-admin --findOne
+7. ng g @schematics/demo:crud-resource lazy-feature/services/super-admin --findOne
 	or
-	schematics @schematics/demo:crud-resource lazy-feature/super-admin --findOne
+	schematics @schematics/demo:crud-resource lazy-feature/services/super-admin --findOne
+  or 
+  schematics .:my-custom-schematics simplify  --scanAll --debug=false (for working locally and testing changes)
+  or
+  ng g @schematics/demo:my-custom-schematics lazy-feature/components/super-admin --scanAll

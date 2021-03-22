@@ -1,9 +1,8 @@
 import { strings } from '@angular-devkit/core';
-import { apply, mergeWith, Rule, SchematicContext, template, Tree, url } from '@angular-devkit/schematics';
+import { apply, mergeWith, move, Rule, SchematicContext, template, Tree, url } from '@angular-devkit/schematics';
 import {getWorkspace} from '@schematics/angular/utility/config';
 import {buildDefaultPath, getProject} from '@schematics/angular/utility/project';
 import {parseName} from '@schematics/angular/utility/parse-name';
-import { move } from '@angular-devkit/schematics';
 
 
 // You don't have to export the function as default. You can also have more than one rule factory

@@ -3,7 +3,8 @@
   "schematics": {
     "my-custom-schematics": {
       "description": "A blank schematic.",
-      "factory": "./my-custom-schematics/index#myCustomSchematics"
+      "factory": "./my-custom-schematics/index#myCustomSchematics",
+      "schema": "./my-custom-schematics/schema.json"
     },
     "crud-resource": {
       "description": "A blank schematic.",
