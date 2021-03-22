@@ -15,6 +15,10 @@ export function myCustomSchematics(_options: any): Rule {
     const path = _options.path || buildDefaultPath(project as any);
     const parsedPath = parseName(path, _options.name);
 
+
+    _options.name = parsedPath.name;
+    _options.path = parsedPath.path;
+
     const sourceTemplates = url('./files');
     const sourceParameterizedTemplates = apply(sourceTemplates, [
       template({
